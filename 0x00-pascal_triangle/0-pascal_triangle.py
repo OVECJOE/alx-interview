@@ -27,3 +27,10 @@ def pascal_triangle(n):
         [_combination(x, y) for y in range(x+1)]
         for x in range(1, n+1)
     ]
+
+
+print(pascal_triangle(2))
+print(pascal_triangle(3))
+print(pascal_triangle(7))
+print(pascal_triangle(-1))
+
