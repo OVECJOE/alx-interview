@@ -8,6 +8,7 @@ implementation
 def _combination(n, r):
     '''Compute the combination of two variables'''
     from functools import reduce
+
     def n_fac(n):
         '''Find the factorial of an integer'''
         fac = 1
