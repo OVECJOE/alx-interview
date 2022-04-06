@@ -24,7 +24,7 @@ def pascal_triangle(n):
     if n <= 0:
         return []
 
-    return [
+    return [[1]] + [
         [_combination(x, y) for y in range(x+1)]
         for x in range(1, n)
     ]
