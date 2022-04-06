@@ -19,8 +19,7 @@ def _combination(n, r):
 
 def pascal_triangle(n):
     '''generates the pascal triangle for a given power'''
-    assert type(n) == int
-    if n <= 0:
+    if n <= 0 or type(n) is not int:
         return []
 
     return [
