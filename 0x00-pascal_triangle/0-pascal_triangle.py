@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+'''
+A module that contain my pascal triangle function
+implementation
+'''
 from functools import reduce
 
 
