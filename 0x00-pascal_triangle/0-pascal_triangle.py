@@ -3,10 +3,10 @@
 A module that contain my pascal triangle function
 implementation
 '''
-from functools import reduce
 
 
 def _combination(n, r):
+    from functools import reduce
     '''Compute the combination of r in n.'''
     def n_fac(n):
         '''returns the factorial of n'''
