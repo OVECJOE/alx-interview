@@ -12,16 +12,18 @@ Write a method that determines if all the boxes can be opened.
     The first box boxes[0] is unlocked
     Return True if all boxes can be opened, else return False
 '''
+
+
 def canUnlockAll(boxes):
     '''Determines if all the boxes can be opened'''
-    updater = lambda seq, box: seq.extend([key for key in box
-    if 0 < key < len(boxes) and key not in seq])
+    def updater(seq, box): return seq.extend([key for key in box
+                                              if 0 < key < len(boxes) and key not in seq])
     valid_keys = []
     count = 1
 
-    updater(valid_keys, boxes[0])    
+    updater(valid_keys, boxes[0])
     for key in valid_keys:
         updater(valid_keys, boxes[key])
-    
+
     count += len(valid_keys)
     return True if count == len(boxes) else False
