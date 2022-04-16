@@ -23,7 +23,9 @@ def canUnlockAll(boxes):
 
     updater(valid_keys, boxes[0])
     for key in valid_keys:
-        updater(valid_keys, boxes[key])
-
-    count += len(valid_keys)
-    return True if count == len(boxes) else False
+        if boxes[key]:
+            updater(valid_keys, boxes[key])
+        count += 1
+        if count == len(boxes):
+            return True
+    return False
