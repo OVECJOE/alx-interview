@@ -13,7 +13,6 @@ Write a method that determines if all the boxes can be opened.
     Return True if all boxes can be opened, else return False
 '''
 
-
 # def canUnlockAll(boxes):
 #
 #     def updater(seq, box): return seq.extend([key for key in box
@@ -27,6 +26,7 @@ Write a method that determines if all the boxes can be opened.
 #         count += 1
 
 #     return True if count == len(boxes) else False
+
 
 def canUnlockAll(boxes):
     '''Determines if all the boxes can be opened'''
