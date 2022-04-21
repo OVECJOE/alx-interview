@@ -1,4 +1,3 @@
-# pylint: disable=unreachable
 #!/usr/bin/python3
 '''
 The minimum operations coding challenge
@@ -11,9 +10,9 @@ def minOperations(n):
     '''
     if not isinstance(n, int):
         return 0
-        ops_count = 0
-        clipboard = 0
-        done = 1
+    ops_count = 0
+    clipboard = 0
+    done = 1
     while done < n:
         if clipboard == 0:
             clipboard = done
