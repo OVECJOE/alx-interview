@@ -15,7 +15,7 @@ def print_stats():
     print(f'File size: {total_size}')
     for item in cache.items():
         if item[1] != 0:
-            print(f'{item[0]}: {item[1]}')
+            print('{}: {}'.format(item[0], item[1]))
 
 
 if __name__ == '__main__':
