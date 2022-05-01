@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# pylint: disable=invalid-name
 '''
 A script that reads stdin line by line of a log file and computes metrics
 '''
