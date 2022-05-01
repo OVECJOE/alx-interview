@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-'''
-A script that reads stdin line by line of a log file and computes metrics
-'''
+'''A script that reads stdin line by line and computes metrics'''
 import sys
 
 cache = {'200': 0, '301': 0, '400': 0, '401': 0, '403': 0,
